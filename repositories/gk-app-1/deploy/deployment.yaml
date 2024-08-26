@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: gk-app-1
-        image: gk-app-1:0.0.1
+        image: gk-app-1:0.0.2
         ports:
         - containerPort: 5000
           #   volumeMounts:

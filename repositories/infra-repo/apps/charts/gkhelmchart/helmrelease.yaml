@@ -1,0 +1,14 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: gkhelmchart-hr
+  namespace: default
+spec:
+  interval: 1m
+  chart:
+    spec:
+      chart: ./repositories/charts/gkhelmchart
+      sourceRef:
+        kind: GitRepository
+        name: gk-git-app-1
+        namespace: default

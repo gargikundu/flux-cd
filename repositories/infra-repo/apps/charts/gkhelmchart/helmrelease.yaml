@@ -7,7 +7,7 @@ spec:
   interval: 1m
   chart:
     spec:
-      chart: ./repositories/charts/gkhelmchart
+      chart: ./repositories/charts/
       sourceRef:
         kind: GitRepository
         name: gk-git-app-1
